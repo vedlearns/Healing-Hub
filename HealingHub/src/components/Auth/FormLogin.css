@@ -1,0 +1,95 @@
+.form-container {
+  background: #f0f2f0;
+  background: -webkit-linear-gradient(to right, #000c40, #f0f2f0);
+  background: linear-gradient(to right, #f0f2f0, #000c40);
+  background: linear-gradient(to right, #976496, #0060fa);
+  padding-bottom: 5em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.4em;
+  background: -webkit-linear-gradient(to right, #004e92, #000428);
+  background: linear-gradient(to right, #004e92, #000428);
+  border: solid rgb(108, 106, 106) 2px;
+  border-radius: 25px;
+  transition: 0.4s ease-in-out;
+}
+
+.form:hover {
+  transform: scale(1.009);
+  border: 1px solid black;
+}
+
+#heading {
+  text-align: center;
+  margin: 2em;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: white;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+}
+
+.form .btn {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+  flex-direction: row;
+  margin-top: 2.5em;
+}
+
+.button {
+  --bg: #848485ae;
+  --hover-bg: #46d0f6;
+  --hover-text: #000;
+  color: #fff;
+  width: 8.5em;
+  border: 1px solid var(--bg);
+  border-radius: 14px;
+  padding: 0.8em 2em;
+  transition: 0.4s ease-in-out;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: white;
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
